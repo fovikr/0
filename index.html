@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <title>张鹤峰的个人简介</title>
+    <meta
+      name="description"
+      content="这是我的个人学习网站,欢迎大家来一起探讨学习."
+    />
+    <!-- config -->
+    <link
+      rel="manifest"
+      href="./manifest.json"
+    />
+    <link
+      rel="icon"
+      href="favicon.ico"
+    />
+  </head>
+  <body
+    style="
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      content: center;
+    "
+  >
+    <!--头像栏-->
+    <div
+      style="
+        width: 100%;
+        height: 160px;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <img
+        alt="张鹤峰"
+        src="picture/logo.png"
+        width="80px"
+        height="80px"
+      />
+    </div>
+    <!--内容栏-->
+    <div
+      style="
+        display: block;
+        padding: 30px;
+        max-width: 700px;
+        min-height: 70vh;
+        width: 90%;
+        letter-spacing: 1px;
+        line-height: 1.7;
+      "
+    >
+      <p>
+        你好,我是张鹤峰。一位正在学习网络编程的学者，欢迎大家来到我的网站参观。
+      </p>
+      <p>此网站记录我的成长过程会一直保留。且会随着我的学习进度不断更新。</p>
+      <p>
+        目前已掌握CSS入门知识，已经可以做出类似品牌官网的网站。目前正在学习<b
+          >Java Script</b
+        >中。
+      </p>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <p>如有商业需求请联系下方:</p>
+        <p>微 <b>xiaoshengai1</b> 信</p>
+        <img
+          style="height: 196px; width: 172px; margin: 20px 0"
+          alt="张鹤峰"
+          src="picture/MP.jpg"
+        />
+      </div>
+    </div>
+    <!--底部栏-->
+    <div
+      style="
+        width: 100%;
+        height: 160px;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      "
+    >
+      <p>版权</p>
+      <p>备案号</p>
+    </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  </body>
+</html>
